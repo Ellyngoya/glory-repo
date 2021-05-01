@@ -18,7 +18,7 @@ pipeline {
      }
    stage('Deploy'){
       steps {
-        sh "deploy adapters: [tomcat8(credentialsId: 'TomcatID', path: '/opt/tomcat/webapps', url: 'http://10.0.0.237:8080/')], contextPath: null, war:'"
+        sh "deploy adapters: [tomcat8(credentialsId: 'TomcatID', path: '/opt/tomcat/webapps', url: http://10.0.0.237:8080/)], contextPath: null, war:"
      } 
    }
   } 
