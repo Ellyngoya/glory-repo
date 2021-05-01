@@ -15,11 +15,6 @@ pipeline {
       steps {
         sh 'mvn test'
        }
-     } 
-    stage('Deploy-tomcat'){
-      steps {
-        sh 'deploy adapters: [tomcat8(credentialsId: 'TomcatID', path: '', url: 'http://10.0.0.237:8080/')], contextPath: null, war: '**/*.wa''
-      }
-    } 
+     }
   }
 }
